@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML DOM JS Project</title>
+  </head>
+  <body>
+    <input type="text" name="text" id="text" />
+    <input type="button" value="text_btn" id="button" />
+
+    <script>
+      console.log("Tavs vārds: [niks]");
+
+      function printName() {
+        console.log("Tavs vārds: [niks]");
+      }
+
+      const textInput = document.getElementById("text");
+
+      console.log("Input lauka sākotnējā vērtība: ", textInput.value);
+
+      const button = document.getElementById("button");
+
+      button.addEventListener("click", someFunction);
+
+      function someFunction() {
+        console.log("Input lauka vērtība ir: ", textInput.value);
+      }
+    </script>
+  </body>
+</html>
